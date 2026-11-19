@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lehrgangstermine Süd 2027</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page">
+    <header class="top">
+      <div class="title-row">
+        <h1>Lehrgangstermine Süd 2027</h1>
+        <a id="add-link" class="add-link" hidden href="#" target="_blank" rel="noopener noreferrer">Termin hinzufügen</a>
+      </div>
+      <p class="lead">Tageslehrgänge vor Zentral, Süd 3 danach. Zeile anklicken: Umfeld ±2 Wochen.</p>
+      <div class="toggle" role="group" aria-label="Anzeige">
+        <button type="button" id="btn-mine" class="on" data-all="false">Nur meine Termine</button>
+        <button type="button" id="btn-all" data-all="true">Alles anzeigen</button>
+      </div>
+      <div class="legend" id="legend"></div>
+    </header>
+    <main id="list"></main>
+    <p class="status" id="status" hidden></p>
+    <footer>
+      Restrisiko 16./17.01.: Bezirks-Qualis Obb-Süd/Schwaben-Süd unbekannt. Quellen: DTTB-/BTTV-RTP 26/27 und 27/28, Bezirkspläne Obb-Ost/-Mitte, ettu.org, km.bayern.de, Mayas Kalender. Stand 19.11.2026.
+    </footer>
+  </div>
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
